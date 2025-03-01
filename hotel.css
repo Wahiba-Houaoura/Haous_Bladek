@@ -1,0 +1,33 @@
+.hotel-section-text{
+    background-image: url(marriot.png);
+    height: 95vh;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    padding-top: 20%;
+}
+
+
+
+#check-offer {
+    border-radius: 15px;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 15px;
+    color: white;
+    background-color: #4d869c;
+    width: 75%;
+    box-shadow: 2px 2px rgb(226, 226, 226);
+    border: 1px solid white;
+}
+
+#check-offer:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(255, 255, 255);
+    color: #4d869c;
+    background-color: white;
+    border: 1px solid #4d869c;
+
+
+}
