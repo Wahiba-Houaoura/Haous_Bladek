@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bus.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="image/img-haous-bladek.png" type="image/x-icon">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Bus station</title>
+</head>
+<body>
+    
+    <header style="background-color: #4d869c;">
+        <div class="logo">
+            <img src="image/img-haous-bladek.png" alt="logo" height="60px">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" style="text-decoration: none;">Accueil</a></li>
+            <li><a href="#service" style="text-decoration: none;">Service</a></li>
+            <li><a href="#" style="text-decoration: none;">contact</a></li>        
+        </ul>
+        <div class="search" style="margin-right: 40px;">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+    </header>
+
+
+    <div class="bus">
+        <span class="MyBusTitle">Notre Station bus</span>
+    </div>
+
+
+    <section class="bus-section">
+
+        <h1 class="text-center">Quelle est votre Destination!</h1>
+        <form action="" class="inputs">
+            <select name="location" id="location">
+                <option value="" class="test">Eucalyptus</option>
+                <option value="" class="test">Draria</option>
+                <option value="" class="test">ben aknoun</option>
+            </select>
+
+            <select name="destination" id="destination">
+                <option value=""  class="test">Eucalyptus</option>
+                <option value="" class="test">Bab hassen</option>
+                <option value="" class="test">Place des martyrs</option>
+            </select>
+
+        </form>
+
+        
+
+        <button onclick="getValue()" class="m-auto" id="btn">Recherche</button>
+
+        <div class="container text-center" >
+            <div class="container-bus">
+                <div class="bus-station">
+                    <h1>station bus la plus proche</h1>
+                    <div class="serial-bus-num">
+                        <h1 id="closestStation" class="info">XYZ station</h1>
+                    </div>
+                </div>
+
+                <div class="bus-info">
+                    <h1>info sur le bus</h1>
+                    
+                        <div class="container-num-time">
+                            <div class="bus-num">
+                                <h3>Bus num</h3>
+                                <span class="info" id="bus-num" >XYZ</span>
+                            </div>
+                            <div class="bus-time">
+                                <h3>Temps Arrivé</h3>
+                                <span class="info" id="estimate-time">X min</span>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+
+            <div class="map">
+                <h1>Checker notre carte!</h1>
+                <img src="image/img_map.svg" alt="map" height="300px">
+            </div>
+        </div>
+
+        
+
+
+        <div class="bus-thingy">
+
+            <img src="css/ic-bus-thingy.svg" alt="mapping" id="default-img">
+            
+
+        </div>
+    </section>
+
+
+    <section class="codeQr">
+
+        <h1 class="alignement">Get Your Ticket!</h1>
+        <div class="inputs text-center">
+            <form action="" >
+                <input id="fname" type="text" name="" placeholder="Entrer votre prenom!" id="" class="inputWidth" required class="payInput">
+            </form>
+
+            <form action="">
+                <input id="lname" type="text" name="" placeholder="Entrer votre nom!" id="" class="inputWidth" required class="payInput">
+            </form>
+
+
+        </div>
+
+        <button onclick="getValue()" class="m-auto" id="btn-pay">clicke</button>
+        <div class="user-bus-card">
+            <div class="container-card-bus-info">
+                <div class="card-img">
+                    <img src="image/logo codewithlylia-modified.png" alt="" id="default-pic" height="60px">
+                </div>
+                <div class="card-user-name">
+                    <h3 id="name_Tag">prenom</h3>
+                    <h3 id="last_Tag">nom</h3>
+                </div>
+            </div>
+
+            <div class="container-codeQr">
+                <img src="css/ic_code_qr blurred.svg" alt="" id="qr_code" height="170px">
+            </div>
+        </div>
+
+        <a href="image/ticket.png" download="image/ticket.png" class="ticket">download ticket</a>
+    </section>
+
+
+   
+    <footer>
+        <section class="section-link">
+            <div class="link">
+                <h2>info voyage</h2>
+                <a href="kharjat.html">Evenement</a><br>
+                <a href="hotel.html">Accommodation</a><br>
+                <a href="bus-station.html">Se deplacer</a> <br>               
+                <a href="restaurent.html">Restorants</a><br>
+                <a href="hotel.html">Hotels</a>                    
+            </div>
+            <div class="link">
+                <h2>Decouverts</h2>
+                <a href="">Histoire</a><br>
+                <a href="">Traditions</a><br>
+                <a href="">Art et Culture</a> <br>               
+                <a href="">Pourquoi l'Algerie?</a><br>
+                <a href="">partenaires</a> 
+            </div>
+            <div class="link">
+                <h2>info site web</h2>
+                <a href="">Politique de confidentialité</a><br>
+                <a href="">Politique de cookies </a><br>
+                <a href="">Accessibility</a> <br>               
+                <a href="">Terms & Conditions </a><br>
+                <a href="">Contact Us</a> 
+            </div>
+        </section>
+        <P class="Teams">Copyright 2024 ,TroubleShooters Team ENSTICP</P>
+
+     </footer>
+
+
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
